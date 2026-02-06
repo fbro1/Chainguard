@@ -48,7 +48,7 @@ If you accepted your Chainguard Org invitation and used Google, Github or Gitlab
 chainctl auth login --headless
 ```
 Copy and paste the link into a web browser and login.  Once logged in a confirmation will be shown in the terminal.
-<br/>
+<br/><br/>
 If you used Email, Organisation name or have an Identity Provider ID, use the following command:
 ```
 chainctl auth login
