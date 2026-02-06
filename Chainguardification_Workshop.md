@@ -8,6 +8,9 @@ ssh -i <PATH_TO_CERT>/chainguard-workshop.pem ec2-user@<YOUR_SERVER_IP>
 <br/><br/>
 ### 2. JOIN OUR CHAINGUARD ORGANISATION
 Check your email and accept the invitation to join our Chainguard organisation.
+
+
+
 <br/><br/>
 ### 3. INSTALL CHAINCTL & GRYPE
 Install Chainctl
@@ -40,11 +43,16 @@ chainctl config set default.group somerfordassociates.com-partner
 ```
 <br/><br/>
 ### 6. AUTHENTICATE
-Use the following command to authenticate with Chainguard.  We're using the `--headless` option because we're working on a remote server.
+If you accepted your Chainguard Org invitation and used Google, Github or Gitlab, use the following command to authenticate with Chainguard.
 ```
 chainctl auth login --headless
 ```
 Copy and paste the link into a web browser and login.  Once logged in a confirmation will be shown in the terminal.
+<br/>
+If you used Email, Organisation name or have an Identity Provider ID, use the following command:
+```
+chainctl auth login
+```
 <br/><br/>
 ### 7. IMAGE REPOS
 List your partner Org repos:
