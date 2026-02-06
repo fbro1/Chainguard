@@ -1,9 +1,9 @@
 # Chainguard Hands-on Workshop
 
 ### 1. CONNECT TO EC2 INSTANCE
-Each participant will be provided with a .pem file and the ip address of their AWS EC2 instance.
+Each participant will be provided with a certificate in .pem format and the IP address of their AWS EC2 instance.
 ```
-ssh -i <PATH_TO_CERT>/chainguard-workshop.pem ec2-user@<YOUR_SERVER_IP>
+ssh -i <FILE_PATH_TO_CERT>/chainguard-workshop.pem ec2-user@<YOUR_SERVER_IP>
 ```
 <br/><br/>
 ### 2. JOIN OUR CHAINGUARD ORGANISATION
