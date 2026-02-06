@@ -131,7 +131,7 @@ pwd
 java -version
 ```
 
-As we see, this image runs as user `root` inside root `/` and has java version `21`.
+As we see, this image runs as user `root` inside root `/` and has java version `17`.
 
 CTRL+D to exit the container
 <br/><br/>
