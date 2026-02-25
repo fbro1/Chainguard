@@ -1,8 +1,8 @@
 # Chainguard Hands-on Workshop
  Participants will be provided with a link to a shared Google Drive.  In there you'll find a:
  - Spreadsheet containing your server IP address
- - Certificate in `.pem` format for MacOS or Linux users
- - Certificate in `.ppk` format for PuTTy on Windows
+ - Certificate in `.pem` format for `MacOS` or `Linux` users
+ - Certificate in `.ppk` format for `PuTTy` on `Windows`
 <br/><br/>
 ### 1. CONNECT TO EC2 INSTANCE
 For `MacOS` or `Linux` users, you may need to set the permissions on the certificate before trying to connect.
