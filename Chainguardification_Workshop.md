@@ -1,7 +1,15 @@
 # Chainguard Hands-on Workshop
+ Participants will be provided with a link to a shared Google Drive.  In here you'll find:
+ - Spreadsheet containing your server IP address
+ - Certificate in .pem format for MacOS or Linux users
+ - Certificate in .ppk format for PuTTy on Windows
 
 ### 1. CONNECT TO EC2 INSTANCE
-Each participant will be provided with a certificate in .pem format and the IP address of their AWS EC2 instance.
+For MacOS users, you may need to set the permissions on the certificate before trying to connect.
+```
+chmod 400 <FILE_PATH_TO_CERT>/chainguard-workshop.pem
+```
+For anybody not familiar with connecting to server via certificate, the following command should help:
 ```
 ssh -i <FILE_PATH_TO_CERT>/chainguard-workshop.pem ec2-user@<YOUR_SERVER_IP>
 ```
