@@ -5,14 +5,16 @@
  - Certificate in `.ppk` format for PuTTy on Windows
 <br/><br/>
 ### 1. CONNECT TO EC2 INSTANCE
-For MacOS users, you may need to set the permissions on the certificate before trying to connect.
+For `MacOS` or `Linux` users, you may need to set the permissions on the certificate before trying to connect.
 ```
 chmod 400 <FILE_PATH_TO_CERT>/chainguard-workshop.pem
 ```
-For anybody not familiar with connecting to server via certificate, the following command should help:
+For anybody not familiar with connecting to server via certificate, the following command from your terminal should help:
 ```
 ssh -i <FILE_PATH_TO_CERT>/chainguard-workshop.pem ec2-user@<YOUR_SERVER_IP>
 ```
+For `Windows` users without access to a terminal, please use `PuTTy`.
+
 <br/><br/>
 ### 2. JOIN OUR CHAINGUARD ORGANISATION
 Check your email and accept the invitation to join our Chainguard organisation.
