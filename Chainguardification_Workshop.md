@@ -3,7 +3,7 @@
  - Spreadsheet containing your server IP address
  - Certificate in .pem format for MacOS or Linux users
  - Certificate in .ppk format for PuTTy on Windows
-
+<br/><br/>
 ### 1. CONNECT TO EC2 INSTANCE
 For MacOS users, you may need to set the permissions on the certificate before trying to connect.
 ```
