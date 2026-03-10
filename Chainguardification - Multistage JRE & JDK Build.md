@@ -240,12 +240,11 @@ docker build -t my-spring-cg -f Containerfile.cg .
 Attention: Clean local build and .gradle files if you encounter file permission problems.
 
 Test app inside container:
-:exclamation: You should get an error. The entrypoint differs from the dockerfile. :exclamation:
 ```
 docker run -ti -p 8080:8080 --entrypoint /bin/sh my-spring-cg
 java -jar ./build/libs/spring-boot-0.0.1-SNAPSHOT.jar
 ```
-
+:exclamation: You should get an error. The entrypoint differs from the dockerfile. :exclamation:
 The images are minimal and hardened. This to keep the attack surface as small as possible.
 
 Run container:
