@@ -68,7 +68,7 @@ List your partner Org repos:
 ```
 chainctl images repos list --parent=somerfordassociates.com-partner
 ```
-Should show something like this:
+Should show something like this:\
 <br/>
 [cgr.dev/somerfordassociates.com-partner]\
 ├ [adoptium-jdk]\
@@ -83,7 +83,7 @@ List `python` image tags that we can use:
 chainctl images list --repo=python
 ```
 
-Should show something like this:
+Should show something like this:\
 <br/>
 [cgr.dev/somerfordassociates.com-partner]\
 └ [python]\
@@ -101,6 +101,7 @@ List your partner Org library entitlements:
 chainctl libraries entitlements list --parent=somerfordassociates.com-partner
 ```
 Should show something like this:\
+<br/>
                             ID                             | ECOSYSTEM  \
 -----------------------------------------------------------|------------\
  547c9d93f34ada9c0f59aa998aa3334aca10f7d7/2b16fc4ebdf97777 | JAVASCRIPT \
