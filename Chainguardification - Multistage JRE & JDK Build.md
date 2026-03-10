@@ -20,7 +20,6 @@ For `Windows` users without access to a terminal, please use `PuTTy`.
 Check your email and accept the invitation to join our Chainguard organisation.
 
 
-
 <br/><br/>
 ### 3. INSTALL CHAINCTL & GRYPE
 Install Chainctl
