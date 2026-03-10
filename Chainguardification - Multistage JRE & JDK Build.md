@@ -244,8 +244,8 @@ Test app inside container:
 docker run -ti -p 8080:8080 --entrypoint /bin/sh my-spring-cg
 java -jar ./build/libs/spring-boot-0.0.1-SNAPSHOT.jar
 ```
+:exclamation::exclamation: You should get an error. The entrypoint differs from the dockerfile.
 
-<span style="color:red">You should get an error. The entrypoint differs from the dockerfile.</span>
 The images are minimal and hardened. This to keep the attack surface as small as possible.
 
 Run container:
