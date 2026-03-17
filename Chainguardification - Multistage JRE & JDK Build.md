@@ -48,7 +48,7 @@ Enter Chainguard partner console (https://edu.chainguard.dev/chainguard/chaingua
 ### 5. SET CHAINGUARD ORG
 Set the chainguard partner workshop Org as default:
 ```
-chainctl config set default.group somerfordassociates.com-partner
+chainctl config set default.group chainguard.dev-partners
 ```
 <br/><br/>
 ### 6. AUTHENTICATE
@@ -66,11 +66,11 @@ chainctl auth login
 ### 7. IMAGE REPOS
 List your partner Org repos:
 ```
-chainctl images repos list --parent=somerfordassociates.com-partner
+chainctl images repos list --parent=chainguard.dev-partners
 ```
 Should show something like this:\
 <br/>
-[cgr.dev/somerfordassociates.com-partner]\
+[cgr.dev/chainguard.dev-partners]\
 ├ [adoptium-jdk]\
 ├ [adoptium-jre]\
 ├ [jdk]\
@@ -85,7 +85,7 @@ chainctl images list --repo=python
 
 Should show something like this:\
 <br/>
-[cgr.dev/somerfordassociates.com-partner]\
+[cgr.dev/chainguard.dev-partners]\
 └ [python]\
   ├ sha256:023bd1612ce4a8f9b3d41a86047d0ab32141806c3c65ab36ee7c78ad06cc1648\
   │ ├ [3.9]\
@@ -98,7 +98,7 @@ Should show something like this:\
 ### 8. LIBRARY ENTITLEMENTS
 List your partner Org library entitlements:
 ```
-chainctl libraries entitlements list --parent=somerfordassociates.com-partner
+chainctl libraries entitlements list --parent=chainguard.dev-partners
 ```
 Should show something like this:\
 <br/>
@@ -194,7 +194,7 @@ Test Chainguard base image candidate and get info:
 Username and password will be provided by the presenter.
 ```
 docker login "cgr.dev" --username "############" --password "#############"
-docker run -ti --rm cgr.dev/somerfordassociates.com-partner/jdk:openjdk-17 /bin/sh
+docker run -ti --rm cgr.dev/chainguard.dev-partners/jdk:openjdk-17 /bin/sh
 ```
 Execute inside the image:
 ```
@@ -220,11 +220,11 @@ vi /opt/gs-spring-boot/initial/src/main/java/com/example/springboot/HelloControl
 Create the `Containerfile.cg` file inside `/opt/gs-spring-boot/initial` with following content:
 ```
 cat << EOF > /opt/gs-spring-boot/initial/Containerfile.cg
-FROM cgr.dev/somerfordassociates.com-partner/jdk:openjdk-17 AS build
+FROM cgr.dev/chainguard.dev-partners/jdk:openjdk-17 AS build
 COPY . .
 RUN ./gradlew clean build
 
-FROM cgr.dev/somerfordassociates.com-partner/jre:openjdk-17
+FROM cgr.dev/chainguard.dev-partners/jre:openjdk-17
 COPY --from=build /home/build/./build/libs/spring-boot-0.0.1-SNAPSHOT.jar /home/build/
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/home/build/spring-boot-0.0.1-SNAPSHOT.jar"]
@@ -265,12 +265,12 @@ Now we'll also use Chainguard Libraries.
 (https://edu.chainguard.dev/chainguard/libraries/access/) states following to get access to the [Java libraries](https://edu.chainguard.dev/chainguard/libraries/java/overview/):
 
 ```
-chainctl auth pull-token --repository=java --parent=somerfordassociates.com-partner --ttl=4h
+chainctl auth pull-token --repository=java --parent=chainguard.dev-partners --ttl=4h
 ```
 
 We will use the eval command that will set the required environment variables:
 ```
-eval $(chainctl auth pull-token --output env --repository=java --parent=somerfordassociates.com-partner)
+eval $(chainctl auth pull-token --output env --repository=java --parent=chainguard.dev-partners)
 ```
 
 Check the Gradle build configuration (`/opt/gs-spring-boot/initial/build.gradle`) for dependencies.
@@ -365,7 +365,7 @@ CTRL+C to close the app
 
 Now we can verify the usage of Chainguard libraries inside our Java app:
 ```
-chainctl libraries verify --detailed --parent=somerfordassociates.com-partner ./build/libs/spring-boot-0.0.1-SNAPSHOT.jar
+chainctl libraries verify --detailed --parent=chainguard.dev-partners ./build/libs/spring-boot-0.0.1-SNAPSHOT.jar
 ```
 
 Official documentation: https://edu.chainguard.dev/chainguard/libraries/verification/
