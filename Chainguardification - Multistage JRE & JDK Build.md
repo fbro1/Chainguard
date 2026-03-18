@@ -111,10 +111,10 @@ Should show something like this:\
 This means that we have access to [Chainguard libraries](https://www.chainguard.dev/libraries) for Java, JavaScript and Python.
 <br/><br/>
 ### 9. APP - THE STANDARD WAY
-Using example [Spring Boot app] (https://github.com/spring-guides/gs-spring-boot/tree/main/initial)
+Using example [Spring Boot App](https://github.com/fbro1/gs-spring-boot/tree/main/initial)
 
 ```
-git clone https://github.com/spring-guides/gs-spring-boot.git
+git clone https://github.com/fbro1/gs-spring-boot.git
 cd gs-spring-boot/initial
 ```
 Create the `.dockerignore` file inside `/opt/gs-spring-boot/initial` with following:
