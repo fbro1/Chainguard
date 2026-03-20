@@ -191,9 +191,9 @@ The `Chainguard catalog` tab shows all Chainguard Images. You may ask Chainguard
 
 Test Chainguard base image candidate and get info:
 
-Username and password will be provided by the presenter.
+For the purpose of this workshop we're using a token.  Full documentation for using OICD methods can be found here: https://edu.chainguard.dev/chainguard/chainguard-images/chainguard-registry/authenticating/
 ```
-docker login "cgr.dev" --username "7bc6901041b32201b2c124c47e6a0563a1a1a589/de5de7f71d54dbd2" --password "eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lzc3Vlci5lbmZvcmNlLmRldiIsImV4cCI6MTc3NDAyNDkwMiwiaWF0IjoxNzczODUyMTAyLCJpc3MiOiJodHRwczovL3B1bGx0b2tlbi5pc3N1ZXIuY2hhaW5ndWFyZC5kZXYiLCJzdWIiOiJwdWxsLXRva2VuLWEyZWQ3ZGY4OWE4NzViZjI0ZDY1ZjMzNDgyMjYyNjVjMDcyNjUyMzAifQ.h_pM_7B4R0EncOht3fnI4wneZYd-jZfVI6224wo4TcUaE3WztdZLAP10Hv83zXWyf4omxPOwyAPEWaq7aOrbw_blrIJvpVrjl_fjx4H9kF2s9Z-ol9v2e9QKCXnJaDyr_z_2IxAYX4ZNfnrbaQKAWbVMaUFqOVN4Hkk3bSyoyira0lwbLwsZWfHSZ0SF1MFRoQ8CiXVAlX5EgvGSdM572gcMRDcbBQSeds1uEPoBKyA6THSlx9iwk2vKVajro9gketse9Vrh2vxbdK0EbIJWKPLbC7-rJ9ANopTrFLqjMIFPAJ_Elgf9xGBZ3Fv9NgKfw-OlytTOYt4Xq1Oo54tf_k4Lc4R4wgPB5dN-9-LsUAVIIRUDkA3ijrtBQ_d7Jws2GnaC7dX0IlPtybXYYmwTDORYWOgPnvZxKyCos1gCLeZGxSJexV4CZb2oqps_-1J8O-1GyN1qMTSxPlUkMX0f1AqXoyCKXUPcfFoyNAnM-SywP8LixXQ_xlqZMoAWRtbJJcSH96lOIQHSYCsgJlkHAHb5BBYAfEyMUNcappIUb4zFyncUoBnuscaAR-W35OYB8cp6cFqfa6agJh5h2CIIbXK9qnpOEy5XONlPCz-_HVHHGdn64nD_pxPM14Fcxr2S4a_ieV2ZwhUQdmSnFmiIpu_3WnfGhIA_aKwdF82Cv_k"
+docker login "cgr.dev" --username "###########" --password "############"
 docker run -ti --rm cgr.dev/chainguard.dev-partners/jdk:openjdk-17 /bin/sh
 ```
 Execute inside the image:
