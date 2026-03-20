@@ -189,9 +189,10 @@ Go to the [Chainguard console](https://console.chainguard.dev/) and search for a
 The `Organization` tab shows all images that you can use at your partner organisation.
 The `Chainguard catalog` tab shows all Chainguard Images. You may ask Chainguard to provide you with images from our catalog so that they are available in your org.
 
+For the purpose of this workshop we're using a pull token.  In a production environment managing lots of these tokens can be a burden, we'd recommend using OICD.  Documentation on using OICD methods can be found here: https://edu.chainguard.dev/chainguard/chainguard-images/chainguard-registry/authenticating/
+
 Test Chainguard base image candidate and get info:
 
-For the purpose of this workshop we're using a token.  Full documentation for using OICD methods can be found here: https://edu.chainguard.dev/chainguard/chainguard-images/chainguard-registry/authenticating/
 ```
 docker login "cgr.dev" --username "###########" --password "############"
 docker run -ti --rm cgr.dev/chainguard.dev-partners/jdk:openjdk-17 /bin/sh
