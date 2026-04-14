@@ -194,7 +194,7 @@ For the purpose of this workshop we're using a pull token.  In a production envi
 Test Chainguard base image candidate and get info:
 
 ```
-docker login "cgr.dev" --username "###########" --password "############"
+docker login "cgr.dev" --username "7bc6901041b32201b2c124c47e6a0563a1a1a589/e0079fe748c236be" --password "eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lzc3Vlci5lbmZvcmNlLmRldiIsImV4cCI6MTc3NjM3NTQ4NSwiaWF0IjoxNzc2MjAyNjg1LCJpc3MiOiJodHRwczovL3B1bGx0b2tlbi5pc3N1ZXIuY2hhaW5ndWFyZC5kZXYiLCJzdWIiOiJwdWxsLXRva2VuLTcyZmI3YzM0MmE2YTYxZDUzM2M2ZTZkMWZmNDU5YTk1OWNlOTFlYjQifQ.oJsQf4k4jbYaaMSKXExYxZMg7uknze6oCVq-KqHkykJs-SLy__y7Wb4_VZNp8onMIJkqtazcCUTt9oO6WfSdowgCb-8H-GAmokGnuwVLep-qr1jzhSG0qM1OXqL6g9G-z9PjREzKYjzuGSywx97LCLyQn0yk_rY7dUTtzA5HoTCT3MQES6emVCrViRE2eC8l2BITDxRxX7ipo8fjA9DRA-3JqQoSn5IyeolEr3uPZZKKD7cd2G7KHoNXtm2dJLBYG5zhmOmJzUvtOu_0Edw1PcIyNCWB-nrvEYoqJKdik2336kPFQPHSSuorDuHQ_7N_5cG3KNNaf8vzihC9XN8zwPjrIktvxAvwcy8joHMacWw9Z-bDEZqA-PpCevgZ1IZQwLMfrKrpyatBhC3XdO5B1aIiLSX5BhWz43V5tgwoEW0S6G-PwG-ict2CuKk7jTxLCKvPfhw_1HWDZDrYaWECRL3YjnaKt8QladZUdtHQYWNbi1vbWlcqYTwATX7xEmucdAB6WNiBHpbTYNPxGe9bcAzzZgXXd8Ecazn6zl6cQAOts6zQbfsD31XB4W-DqI4v3LSYgctbm9CFQPjTkod7deplZnOFXe-C082rYj3PBlQHm8oIRz6Q9xBxE7Fwb3kIkYpYonaW7DCs1LKmFnWN1wYdrL7l2-cA1UEtDRfMO4U"
 docker run -ti --rm cgr.dev/chainguard.dev-partners/jdk:openjdk-17 /bin/sh
 ```
 Execute inside the image:
