@@ -21,7 +21,7 @@ Check your email and accept the invitation to join our Chainguard organisation.
 
 
 <br/><br/>
-### 3. INSTALL CHAINCTL & GRYPE
+### 3. INSTALL CHAINCTL, GRYPE & COSIGN
 Install Chainctl
 (https://edu.chainguard.dev/chainguard/chainctl-usage/how-to-install-chainctl/)
 ```
@@ -36,9 +36,9 @@ curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin
 Install Cosign
 (https://docs.sigstore.dev/cosign/system_config/installation/)
 ```
-curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64"
-mv cosign-linux-amd64 /usr/local/bin/cosign
-chmod +x /usr/local/bin/cosign
+sudo curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64"
+sudo mv cosign-linux-amd64 /usr/local/bin/cosign
+sudo chmod +x /usr/local/bin/cosign
 ```
 <br/><br/>
 ### 4. BEGIN WORKSHOP
