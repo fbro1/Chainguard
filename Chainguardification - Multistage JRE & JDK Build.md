@@ -33,6 +33,13 @@ Install Grype
 ```
 curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin
 ```
+Install Cosign
+(https://docs.sigstore.dev/cosign/system_config/installation/)
+```
+curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64"
+mv cosign-linux-amd64 /usr/local/bin/cosign
+chmod +x /usr/local/bin/cosign
+```
 <br/><br/>
 ### 4. BEGIN WORKSHOP
 For the purposes of this workshop we'll run everything as the root user.
